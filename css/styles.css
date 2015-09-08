@@ -11,3 +11,7 @@
 .jumbo-item {
     text-align:center;  
 }
+
+.active {
+    background-color: #1565C0;
+}
