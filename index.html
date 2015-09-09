@@ -11,55 +11,55 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     
-    <body >
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         
         <!-- Top Navbar -->
-            <div id="topNavbar" class = "navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
 
-                <div class = "container">
-                    <a href = "../" class = "navbar-brand"><img src="static/images/jeff_lee_icon_ps.png" style="width:20px;height:20px;"></a>
+            <div class = "container">
+                <a href ="#" class = "navbar-brand"><img src="static/images/jeff_lee_icon_ps.png" style="width:20px;height:20px;"></a>
 
-                    <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-                        <span class = "icon-bar"></span>
-                        <span class = "icon-bar"></span>
-                        <span class = "icon-bar"></span>
-                    </button>
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = "#topNavbar">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
 
-                    <!-- Collapsable nav bar -->
-                    <div class = "collapse navbar-collapse navHeaderCollapse">
-                        <ul class = "nav navbar-nav">
-                            <li><a href = "#about" >About</a></li>
-                            <li><a href = "#portfolio" >Portfolio</a></li>
-                            <li><a href = "#experience" >Experience</a></li>
-                            <li><a href = "#contact" >Contact</a></li>
-                        </ul>
-                    </div>
+                <!-- Collapsable nav bar -->
+                <div id="topNavbar" class = "collapse navbar-collapse navHeaderCollapse">
+                    <ul class = "nav navbar-nav">
+                        <li><a href = "#about" >About</a></li>
+                        <li><a href = "#portfolio" >Portfolio</a></li>
+                        <li><a href = "#experience" >Experience</a></li>
+                        <li><a href = "#contact" >Contact</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
         
         <!-- Image gallery jumbotron -->
-            <div class = "jumbotron">
-                <div class="container">
-                    <div class = "jumbo-item">
-                        <br><br><br>
-                        <img src="static/images/jeff_lee_icon_ps.png" style="width:150px;height:150px;" >
-                        <p style="font-size:300%;">Jefferson Lee</p>
-                        <p style="color:white;">Machine Learning X Android Developer</p>
+        <div class = "jumbotron">
+            <div class="container">
+                <div class = "jumbo-item">
+                    <br><br><br>
+                    <img src="static/images/jeff_lee_icon_ps.png" style="width:150px;height:150px;" >
+                    <p style="font-size:300%;">Jefferson Lee</p>
+                    <p style="color:white;">Machine Learning X Android Developer</p>
 
-                    </div>
                 </div>
             </div>
+        </div>
         
         
         
         <!-- About -->
-            <div data-spy="scroll" data-target="#topNavbar" data-offset="50" class = "container">
+            <div id="about" class = "container-fluid">
                 <div class = "row">
-                    <div class = "col-md-4">
-                        <img id="about" src="static/images/jeff_lee_avatar.png" class="img-circle img-responsive">
+                    <div class = "col-sm-5" style="height:275; width:275; margin-left:auto; margin-right: auto">
+                        <img src="static/images/jeff_lee_avatar.png" class="img-circle img-responsive">
                     </div>
 
-                    <div class = "col-md-8">
+                    <div class = "col-sm-7">
                         <h1>Hi,</h1>
                         <p>My name is Jefferson Lee, but call me Jeff. I'm an aspiring machine learning
                             and Android developer attending my 3rd year at New York University. I am
@@ -81,10 +81,8 @@
 
                 </div>
             
-
-            
                 <div class = "row">
-                    <div class = "col-md-6">
+                    <div class = "col-sm-6">
                         <h3 style="text-align:center">Skills</h3>
                         <ul>
                             <li><i>Proficient with</i>: Java, C, C++, Python, Parse, Android, Processing</li>
@@ -93,7 +91,7 @@
                         </ul>
                     </div>
 
-                    <div class = "col-md-6">
+                    <div class = "col-sm-6">
                         <h3 style="text-align:center">Interests</h3>
                         <ul>
                             <li>Artificial intelligence</li>
@@ -105,13 +103,14 @@
                     </div>
 
                 </div>
+            </div>
             
 
             <!-- Portfolio -->
             
-                <center><h1 id="portfolio">Portfolio</h1></center>
+            <div id="portfolio" class = "container-fluid">
                 <div class = "row">
-
+                    <center><h1>Portfolio</h1></center>
                 </div>
                 <h3>Conscribo</h3>
                 <p>Creative writing Android app that allows writers of different backgrounds to colloaborate
@@ -122,15 +121,14 @@
                 <h3>Tech@NYU</h3>
                 <p>One of the most prevalent tech and entrepreneurial clubs in New York dedicated to
                 connecting technology enthusiasts and spreading entreprenuership.</p>
-
+            </div>
 
             
 
             <!-- Experience -->
-            
-                <center><h1 id="experience">Experience</h1></center>
-                <div class = "row">
-
+            <div id="experience" class = "container-fluid">
+                <div class = "row" >
+                    <center><h1>Experience</h1></center>
                 </div>
 
                 <h3>CodeU Participant</h3>
@@ -143,22 +141,25 @@
                 <h3>Software Engineering Intern</h3>
                 <p>Did a software engineering internship Sophomore year for thinkplay. Helped resolve test 
                     user's issues through reengineering software.</p>
+            </div>
             
 
             <!-- Contact -->
+        <div id="contact" class = "container-fluid" >
             <div id="info-wrapper" style="text-align:center;padding-top:3vh;padding-bottom:3vh;">
-                <a id="contact" style="padding:20px;" href="http://github.com/jeff3456"><i class="fa fa-github fa-3x"></i></a>
+                <a style="padding:20px;" href="http://github.com/jeff3456"><i class="fa fa-github fa-3x"></i></a>
                 <a style="padding:20px;" href="mailto:jeff3456@gmail.com "><i class="fa fa-envelope fa-3x"></i></a>
                 <a style="padding:20px;" href="https://www.linkedin.com/in/jeffersonqlee"><i class="fa fa-linkedin fa-3x"></i></a>   
                 <a style="padding:20px;" href="https://twitter.com/yodisjeff"><i class="fa fa-twitter fa-3x"></i></a>
             </div>
+            
         </div>
 
         <!-- / Bottom navigation bar -->
         <div class = "navbar navbar-default navbar-static-bottom">
             <div class = "container">
-                <p class = "navbar-text pull-left">Site Built By Jefferson Lee</p>
-                <a href = "../" class = "navbar-btn btn btn-primary pull-right ">Go to top</a>
+                <p class = "navbar-text pull-left">Site built by Jefferson Lee</p>
+                <a href = "#" class = "navbar-btn btn btn-primary pull-right ">Go to top</a>
             </div>
         </div>
         

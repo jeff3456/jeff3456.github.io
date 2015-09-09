@@ -1,5 +1,5 @@
 .jumbotron {
-    height: 500;
+    height: 500px;
     margin-bottom: 0px;
     background-image: url(../static/images/tessellate.png);
     background-position: 50% 50%;
@@ -13,5 +13,21 @@
 }
 
 .active {
-    background-color: #1565C0;
+    background-color: #1565C0;   
+}
+
+body {
+    position: relative;
+}
+
+#about {
+
+}
+
+#portfolio{
+}
+#experience{
+}
+
+#contact{
 }
