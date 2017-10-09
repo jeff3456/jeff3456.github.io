@@ -3,9 +3,19 @@
 	<head>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="static/images/jeff_lee_icon_ps.ico">
 		<title>Jeff Lee</title>
+        
+        <style>
+          body {
+              position: relative; 
+          }
+          #about {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+          #portfolio {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+          #experience {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+          #contact {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+      </style>
 		<link href = "css/styles.css" rel = "stylesheet">
 		<link href = "css/bootstrap.min.css" rel = "stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -52,8 +62,8 @@
         
         
         <!-- About -->
-        <div id="about" class = "container-fluid">
-            <div class = "row">
+        <!--div class = "container-fluid"-->
+            <div id="about" class = "container-fluid row">
                 <div class = "col-sm-5" style="height:275; width:275; margin-left:auto; margin-right: auto">
                     <img src="static/images/jeff_lee_avatar.png" class="img-circle img-responsive">
                 </div>
@@ -61,7 +71,7 @@
                 <div class = "col-sm-7">
                     <h1>Hi,</h1>
                     <p>My name is Jefferson Lee, but call me Jeff. I'm an aspiring machine learning
-                        and Android developer attending my 3rd year at New York University. I am
+                        and Android developer attending my last year at New York University. I am
                         majoring in Computer Science and Mathematics and minoring in Web
                         Applications</p>
 
@@ -74,7 +84,7 @@
                         <a href="http://techatnyu.org/">Tech@NYU</a> and developing
                         <a href="#portfolio">personal projects</a> such as this website.</p>
 
-                    <a href = "static/files/Resume-8-12-2015%20v3.pdf">Resume</a>
+                    <a href = "static/files/Resume-9-9-2015%20WEB%20v4.pdf">Resume</a>
 
                 </div>
 
@@ -102,13 +112,13 @@
                 </div>
 
             </div>
-        </div>
+        <!--/div-->
             
 
             <!-- Portfolio -->
             
-        <div id="portfolio" class = "container-fluid">
-            <div class = "row">
+        <!--div class = "container-fluid" -->
+            <div id="portfolio" class = "container-fluid row">
                 <center><h1>Portfolio</h1></center>
             </div>
             <h3>Conscribo</h3>
@@ -120,13 +130,13 @@
             <h3>Tech@NYU</h3>
             <p>One of the most prevalent tech and entrepreneurial clubs in New York dedicated to
             connecting technology enthusiasts and spreading entreprenuership.</p>
-        </div>
+        <!--/div -->
 
             
 
         <!-- Experience -->
-        <div id="experience" class = "container-fluid">
-            <div class = "row" >
+        <!--div id="experience" class = "container-fluid"-->
+            <div id="experience" class = "container-fluid row" >
                 <center><h1>Experience</h1></center>
             </div>
 
@@ -140,18 +150,20 @@
             <h3>Software Engineering Intern</h3>
             <p>Did a software engineering internship Sophomore year for thinkplay. Helped resolve test 
                 user's issues through reengineering software.</p>
-        </div>
+        <!--/div-->
             
 
             <!-- Contact -->
-        <div id="contact" class = "container-fluid" >
-            <div id="info-wrapper" style="text-align:center;padding-top:3vh;padding-bottom:3vh;">
-                <a style="padding:20px;" href="http://github.com/jeff3456"><i class="fa fa-github fa-3x"></i></a>
-                <a style="padding:20px;" href="mailto:jeff3456@gmail.com "><i class="fa fa-envelope fa-3x"></i></a>
-                <a style="padding:20px;" href="https://www.linkedin.com/in/jeffersonqlee"><i class="fa fa-linkedin fa-3x"></i></a>   
-                <a style="padding:20px;" href="https://twitter.com/yodisjeff"><i class="fa fa-twitter fa-3x"></i></a>
+        <!--div id="contact" class = "container-fluid" -->
+            <div id="contact"  class ="container-fluid row">
+                <div id="info-wrapper" style="text-align:center;padding-top:3vh;padding-bottom:3vh;">
+                    <a style="padding:20px;" href="http://github.com/jeff3456"><i class="fa fa-github fa-3x"></i></a>
+                    <a style="padding:20px;" href="mailto:jeff3456@gmail.com "><i class="fa fa-envelope fa-3x"></i></a>
+                    <a style="padding:20px;" href="https://www.linkedin.com/in/jeffersonqlee"><i class="fa fa-linkedin fa-3x"></i></a>   
+                    <a style="padding:20px;" href="https://twitter.com/yodisjeff"><i class="fa fa-twitter fa-3x"></i></a>
+                </div>
             </div>
-        </div>
+            <!--/div-->
 
         <!-- / Bottom navigation bar -->
         <div class = "navbar navbar-default navbar-static-bottom">
